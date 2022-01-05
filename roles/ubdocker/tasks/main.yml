@@ -1,0 +1,13 @@
+---
+# tasks file for ubdocker
+
+- name: Check if docker group is present
+  group:
+    name: docker
+    state: present
+
+- name: Adding user to docker group
+  user:
+    name: "{{ docker_user }}"
+    group: docker
+    append: yes

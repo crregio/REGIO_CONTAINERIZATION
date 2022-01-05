@@ -1,0 +1,8 @@
+---
+# tasks file for stopfirewall
+
+- name: Stoping Firewall
+  service:
+    name: ufw
+    state: stopped
+    enabled: no
