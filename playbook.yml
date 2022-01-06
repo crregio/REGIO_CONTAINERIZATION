@@ -50,3 +50,7 @@
     - name: Add user to docker group
       include_role:
         name: ubdocker
+
+    - name: Build and run dockerfile
+      include_role:
+        name: dockerfile
